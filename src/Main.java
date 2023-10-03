@@ -27,7 +27,9 @@ public class Main {
         System.out.println();
         udskriv(matrix2);
 
-
+        double [][]m;
+        m=addMatrix(matrix1,matrix2);
+        udskriv(m);
     }
 
     public static double[][] addMatrix(double [][] m1,double [][] m2){
