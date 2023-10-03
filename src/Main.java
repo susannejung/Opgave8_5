@@ -24,7 +24,19 @@ public class Main {
                 matrix2[i][j]= input.nextDouble();
 
         udskriv(matrix1);
+        System.out.println();
+        udskriv(matrix2);
 
+
+    }
+
+    public static double[][] addMatrix(double [][] m1,double [][] m2){
+        double [][] resMatrix=new double[2][2];
+        for(int i=0;i<2;i++)
+            for(int j=0;j<2;j++)
+                resMatrix[i][j]=m1[i][j]+m2[i][j];
+
+        return resMatrix;
     }
 
     public static void udskriv(double [][] a){
